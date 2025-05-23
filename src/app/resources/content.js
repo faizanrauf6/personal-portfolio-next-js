@@ -1,16 +1,16 @@
-import { Logo } from "@/once-ui/components";
+import { Logo } from '@/once-ui/components';
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: 'M Faizan',
+  lastName: 'Rauf',
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: 'Senior Software Engineer',
+  avatar: '/images/avatar-p.png',
+  email: 'faizanrauf6@gmail.com',
+  location: 'Asia/Karachi', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ['English', 'Urdu', 'Punjabi'], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally writes about system design, emerging technologies, and the
+      intersection of engineering and innovation.
     </>
   ),
 };
@@ -28,50 +28,60 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: 'GitHub',
+    icon: 'github',
+    link: 'https://github.com/faizanrauf6',
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    name: 'LinkedIn',
+    icon: 'linkedin',
+    link: 'https://www.linkedin.com/in/m-faizan-rauf/',
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
+    name: 'X',
+    icon: 'x',
+    link: 'https://twitter.com/faizanch6',
   },
   {
-    name: "Email",
-    icon: "email",
+    name: 'Email',
+    icon: 'email',
     link: `mailto:${person.email}`,
   },
 ];
 
 const home = {
-  path: "/",
-  image: "/images/og/home.jpg",
-  label: "Home",
+  path: '/',
+  image: '/images/og/home.jpg',
+  label: 'Home',
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Blending design and code</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: (
+      <>
+        Recent project: <strong className='ml-4'>Once UI</strong>
+      </>
+    ),
+    href: '/work/building-once-ui-a-customizable-design-system',
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Faizan Rauf, a Senior Software Engineer at{' '}
+      <Logo
+        icon={false}
+        style={{ display: 'inline-flex', top: '0.25em', marginLeft: '-0.25em' }}
+      />
+      where I build fast, responsive, and accessible websites.
+      <br /> In my free time, I create and refine web projects that solve
+      real-world problems.
     </>
   ),
 };
 
 const about = {
-  path: "/about",
-  label: "About",
+  path: '/about',
+  label: 'About',
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -83,131 +93,274 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: 'https://cal.com',
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: 'Introduction',
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Faizan is a Lahore-based web developer who thrives on turning complex
+        problems into clean, user-friendly web experiences. His work blends
+        modern design with solid engineering across responsive interfaces and
+        interactive web applications.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: 'Work Experience',
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: 'Must Company',
+        timeframe: 'April 2025 - Present',
+        role: 'Senior Software Engineer (ReactJs/NextJs)',
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Contributed to the development of Must’s internal admin portal,
+            implementing critical transaction features such as Peer-to-Peer
+            (P2P), Peer-to-User (P2U), and wallet management tools.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Integrated complex currency conversion flows (e.g., KWT to SUT and
+            vice versa), streamlining backend processes and improving
+            operational efficiency.
+          </>,
+          <>
+            Developed and launched the “Super Save” feature for user savings
+            management, enhancing user retention through intuitive design and
+            optimized performance.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: '/images/projects/must-p.png',
+          //   alt: 'MSQ Admin Portal',
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: 'Crewlogix Technologies',
+        timeframe: 'Jan 2023 - March 2025',
+        role: 'Software Engineer (NodeJs/NestJs)',
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed and maintained a comprehensive admin panel for a
+            multi-vendor e-commerce platform, enhancing user experience and
+            operational efficiency.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Implemented a robust payment gateway integration, ensuring secure
+            transactions and compliance with industry standards.
           </>,
         ],
         images: [],
+      },
+      {
+        company: 'Mahir Company',
+        timeframe: 'Feb 2022 - Jan 2023',
+        role: 'MERN Stack Developer',
+        achievements: [
+          <>
+            Developed Mahir Company’s website, admin panel, and backend APIs
+            using the MERN stack, ensuring a seamless and scalable architecture
+            for platform growth.
+          </>,
+          <>
+            Collaborated closely with product and design teams to deliver a
+            world-class user experience, prototyping new features and
+            redesigning existing flows based on user feedback.
+          </>,
+          <>
+            Extended and implemented APIs in coordination with the server team,
+            enabling smooth integration across services and improving platform
+            reliability.
+          </>,
+        ],
+      },
+      {
+        company: 'Nielsen Company',
+        timeframe: 'Sep 2020 - Feb 2022',
+        role: 'SUD Executive',
+        achievements: [
+          <>
+            Designed and implemented scripts for advanced data processing and
+            visualization, streamlining analytics workflows and improving data
+            clarity.
+          </>,
+          <>
+            Developed AI-driven software solutions for various clients,
+            enhancing system automation and delivering tailored performance
+            improvements.
+          </>,
+        ],
+      },
+      {
+        company: 'The A Web Technologies',
+        timeframe: 'May 2019 - Feb 2020',
+        role: 'Website Developer',
+        achievements: [
+          <>
+            Designed and developed advanced applications using JavaScript,
+            React.js, and Node.js, delivering scalable and maintainable
+            solutions.
+          </>,
+          <>
+            Implemented comprehensive unit testing strategies to ensure code
+            robustness, covering edge cases and enhancing usability.
+          </>,
+          <>
+            Actively performed bug fixes and optimized application performance,
+            resulting in improved user experience and reliability.
+          </>,
+          <>
+            Managed data effectively using MongoDB, ensuring efficient storage
+            and retrieval for high-performance applications.
+          </>,
+        ],
       },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: 'Studies',
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: 'COMSATS University Islamabad',
+        timeframe: '2015 - 2019',
+        degree: 'Bachelor of Science in Software Engineering',
+        description: (
+          <>
+            Graduated with a degree in Software Engineering, specializing in
+            software development and data structures, with a CGPA of 3.35 (81%).
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: 'Technical Skills',
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: 'ReactJS',
+        description: <>Experienced in building dynamic UI with ReactJS.</>,
+        Icon: 'SiReact',
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: 'Next.js',
+        description: (
+          <>Building next-gen apps with Next.js + Once UI + Supabase.</>
+        ),
+        Icon: 'SiNextdotjs',
+      },
+      {
+        title: 'Node.js',
+        description: <>Backend development with Node.js for scalable APIs.</>,
+        Icon: 'SiNodedotjs',
+      },
+      {
+        title: 'NestJS',
+        description: (
+          <>
+            Building efficient, reliable server-side applications with NestJS.
+          </>
+        ),
+        Icon: 'SiNestjs',
+      },
+      {
+        title: 'TypeScript',
+        description: (
+          <>
+            Strongly typed JavaScript with TypeScript for better
+            maintainability.
+          </>
+        ),
+        Icon: 'SiTypescript',
+      },
+      {
+        title: 'Express.js',
+        description: <>Lightweight web framework for Node.js.</>,
+        Icon: 'SiExpress',
+      },
+      {
+        title: 'Sails.js',
+        description: (
+          <>MVC framework for Node.js to build custom, enterprise-grade apps.</>
+        ),
+        Icon: 'SiSailsdotjs',
+      },
+      {
+        title: 'AWS',
+        description: (
+          <>Cloud infrastructure and services with Amazon Web Services.</>
+        ),
+        Icon: 'SiAwslambda',
+      },
+      {
+        title: 'Docker',
+        description: <>Containerization and deployment with Docker.</>,
+        Icon: 'SiDocker',
+      },
+      {
+        title: 'MySQL',
+        description: <>Relational database management using MySQL.</>,
+        Icon: 'SiMysql',
+      },
+      {
+        title: 'PostgreSQL',
+        description: <>Advanced SQL database with PostgreSQL.</>,
+        Icon: 'SiPostgresql',
+      },
+      {
+        title: 'MongoDB',
+        description: <>NoSQL database management with MongoDB.</>,
+        Icon: 'SiMongodb',
+      },
+      {
+        title: 'Python',
+        description: <>Programming and scripting in Python.</>,
+        Icon: 'SiPython',
+      },
+      {
+        title: 'Solidity',
+        description: <>Smart contract development with Solidity.</>,
+        Icon: 'SiSolidity',
+      },
+      {
+        title: 'CI/CD',
+        description: <>Continuous Integration and Delivery pipelines.</>,
+        Icon: 'SiCircleci',
+      },
+      {
+        title: 'Tailwind CSS',
+        description: <>Utility-first CSS framework for rapid UI development.</>,
+        Icon: 'SiTailwindcss',
+      },
+      {
+        title: 'MUI',
+        description: <>Material UI components for React.</>,
+        Icon: 'SiMui',
       },
     ],
   },
 };
 
 const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
+  path: '/blog',
+  label: 'Blog',
+  title: 'Writing about design and tech...',
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  path: "/work",
-  label: "Work",
+  path: '/work',
+  label: 'Work',
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
@@ -215,52 +368,52 @@ const work = {
 };
 
 const gallery = {
-  path: "/gallery",
-  label: "Gallery",
+  path: '/gallery',
+  label: 'Gallery',
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-1.jpg',
+      alt: 'image',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-2.jpg',
+      alt: 'image',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-3.jpg',
+      alt: 'image',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      src: '/images/gallery/horizontal-4.jpg',
+      alt: 'image',
+      orientation: 'horizontal',
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-1.jpg',
+      alt: 'image',
+      orientation: 'vertical',
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-2.jpg',
+      alt: 'image',
+      orientation: 'vertical',
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-3.jpg',
+      alt: 'image',
+      orientation: 'vertical',
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: '/images/gallery/vertical-4.jpg',
+      alt: 'image',
+      orientation: 'vertical',
     },
   ],
 };
