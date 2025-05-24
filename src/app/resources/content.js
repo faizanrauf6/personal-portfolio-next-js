@@ -9,8 +9,8 @@ const person = {
   role: 'Senior Software Engineer',
   avatar: '/images/avatar-p.png',
   email: 'faizanrauf6@gmail.com',
-  location: 'Asia/Karachi', // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ['English', 'Urdu', 'Punjabi'], // optional: Leave the array empty if you don't want to display languages
+  location: 'Asia/Karachi',
+  languages: ['English', 'Urdu', 'Punjabi'],
 };
 
 const newsletter = {
@@ -25,8 +25,6 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: 'GitHub',
     icon: 'github',
@@ -40,7 +38,7 @@ const social = [
   {
     name: 'X',
     icon: 'x',
-    link: 'https://twitter.com/faizanch6',
+    link: 'https://twitter.com/faizanch555',
   },
   {
     name: 'Email',
@@ -51,7 +49,7 @@ const social = [
 
 const home = {
   path: '/',
-  image: '/images/og/home.jpg',
+  image: '/images/og/home.png',
   label: 'Home',
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -60,21 +58,19 @@ const home = {
     display: true,
     title: (
       <>
-        Recent project: <strong className='ml-4'>Once UI</strong>
+        Recent project: <strong className='ml-4'>HelloCustom</strong>
       </>
     ),
-    href: '/work/building-once-ui-a-customizable-design-system',
+    href: '/work/personalization-for-pod-sellers',
   },
   subline: (
     <>
       I'm Faizan Rauf, a Senior Software Engineer at{' '}
-      <Logo
-        icon={false}
-        style={{ display: 'inline-flex', top: '0.25em', marginLeft: '-0.25em' }}
-      />
-      where I build fast, responsive, and accessible websites.
-      <br /> In my free time, I create and refine web projects that solve
-      real-world problems.
+      <strong>Must Company</strong>, where I build fast, responsive, and
+      accessible websites.
+      <br />
+      In my free time, I create and refine web projects that solve real-world
+      problems.
     </>
   ),
 };
